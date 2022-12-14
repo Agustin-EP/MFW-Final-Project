@@ -1,17 +1,54 @@
-/* Error: This file is already being loaded.
- *   ,
- * 1 | @import ""
- *   |         ^^
- *   '
- *   scss/style.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: This file is already being loaded.\a   \2577 \a 1 \2502  @import ""\a   \2502          ^^\a   \2575 \a   scss/style.scss 1:9  root stylesheet';
+:root {
+  --color-body: #b6cbce;
+  --color-heading: #eef3db;
+  --color-base: #033f47;
+  --color-base2: #022a30;
+  --color-brand: #e0f780;
+  --color-brand2: #deff58;
+  --sidbar-width: 240px;
 }
+
+@media (min-width: 992px) {
+  .navbar {
+    min-height: 100vh;
+    width: var(--sidbar-width);
+    background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)), url(../img/sidebimg.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .navbar .nav-link:hover {
+    color: var(--color-brand);
+  }
+  .navbar-brand img {
+    border: 8px solid var(--color-brand);
+  }
+}
+body {
+  background-color: var(--color-base2);
+  color: var(--color-body);
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-heading);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-body);
+  transition: all 0.4s ease;
+}
+
+a:hover {
+  color: var(--color-brand);
+}
+
+img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
