@@ -24,5 +24,7 @@
     .navbar-brand img{
         border: 8px solid var(--color-brand);
     }
- 
+    .navbar .nav-link.active{
+        color: var(--color-brand);
+    }
 }

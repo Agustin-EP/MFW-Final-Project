@@ -7,6 +7,9 @@
 .navbar {
     background-color: var(--color-base);
 }
+.navbar .nav-link.active{
+    color: var(--color-brand);
+}
 
 
 body{
