@@ -1,5 +1,8 @@
 @media (min-width: 992px) {
-    
+   .navbar {
+    background-color: var(--color-base);
+}
+
     .navbar {
        min-height: 100vh;
         width: var(--sidbar-width);
@@ -7,12 +10,14 @@
         background-size: cover;
         background-position: center;
         
+        
     }
     .navbar .nav-link{
         font-weight: 700;
         text-transform: uppercase;
         color: #fff;
     }
+ 
     .navbar .nav-link:hover{
         color: var(--color-brand);
     }
