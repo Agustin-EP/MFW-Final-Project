@@ -145,7 +145,12 @@ img {
 #contact input.form-control {
   height: 44px;
 }
-
+@media (max-width: 992px) {
+  #content-wrapper {
+      padding-left: 0;
+      margin-inline: auto;
+  }
+}
 
 
 /*# sourceMappingURL=style.css.map */
